@@ -145,7 +145,7 @@ const getCurrency = (chatId, currency) => {
   }
 
 function sendWeather(time, city) {
-        new schedule.scheduleJob({ hour: 3, minute: time}, function () {
+        new schedule.scheduleJob({ hour: 12, minute: time}, function () {
            getWeather(140919598, city);
            
        });
